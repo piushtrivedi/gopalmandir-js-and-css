@@ -1,0 +1,67 @@
+var adblock=new Array()
+adblock[0]='<!-- Begin of AdsforIndians AdNetwork -->
+<script language="JavaScript">
+Srcid=11594;Adty=17;Width=300;Height=250;Skin=8;
+</script>
+<script language="JavaScript" src="http://www.adsforindians.com/showbanner.js">
+</script>
+<!-- End of AdsforIndians AdNetwork -->'
+adblock[1]='<!-- Begin of AdsforIndians AdNetwork -->
+<script language="JavaScript">
+Srcid=11594;Adty=17;Width=300;Height=250;Skin=8;
+</script>
+<script language="JavaScript" src="http://www.adsforindians.com/showbanner.js">
+</script>
+<!-- End of AdsforIndians AdNetwork -->'
+adblock[2]='<!-- Begin of AdsforIndians AdNetwork -->
+<script language="JavaScript">
+Srcid=11594;Adty=17;Width=300;Height=250;Skin=8;
+</script>
+<script language="JavaScript" src="http://www.adsforindians.com/showbanner.js">
+</script>
+<!-- End of AdsforIndians AdNetwork -->'
+adblock[3]='<!-- Begin of AdsforIndians AdNetwork -->
+<script language="JavaScript">
+Srcid=11594;Adty=17;Width=300;Height=250;Skin=8;
+</script>
+<script language="JavaScript" src="http://www.adsforindians.com/showbanner.js">
+</script>
+<!-- End of AdsforIndians AdNetwork -->'
+adblock[4]='<!-- Begin of AdsforIndians AdNetwork -->
+<script language="JavaScript">
+Srcid=11594;Adty=17;Width=300;Height=250;Skin=8;
+</script>
+<script language="JavaScript" src="http://www.adsforindians.com/showbanner.js">
+</script>
+<!-- End of AdsforIndians AdNetwork -->'
+adblock[5]='<!-- Begin of AdsforIndians AdNetwork -->
+<script language="JavaScript">
+Srcid=11594;Adty=17;Width=300;Height=250;Skin=8;
+</script>
+<script language="JavaScript" src="http://www.adsforindians.com/showbanner.js">
+</script>
+<!-- End of AdsforIndians AdNetwork -->'
+adblock[6]='<!-- Begin of AdsforIndians AdNetwork -->
+<script language="JavaScript">
+Srcid=11594;Adty=17;Width=300;Height=250;Skin=8;
+</script>
+<script language="JavaScript" src="http://www.adsforindians.com/showbanner.js">
+</script>
+<!-- End of AdsforIndians AdNetwork -->'
+
+function randomorder(targetarray, spacing) {
+  var randomorder=new Array()
+  var the_one
+  var z=6
+  for (i=0;i<targetarray.length;i++)
+  randomorder[i]=i
+
+  while (z<targetarray.length) {
+    the_one=Math.floor(Math.random()*targetarray.length)
+    if (targetarray[the_one]!="_selected!"){
+      document.write(targetarray[the_one]+spacing)
+      targetarray[the_one]="_selected!"
+      z++
+    }
+  }
+}
